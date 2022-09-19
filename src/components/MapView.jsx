@@ -11,7 +11,7 @@ import { connect } from "react-redux";
 
 const MapView = (props) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCgrj21RlkT5_e0jdrNOw6GEFoH8z2UwJU",
+    googleMapsApiKey: process.env.GCP_KEY,
     libraries: ["places", "directions"]
   });
 
